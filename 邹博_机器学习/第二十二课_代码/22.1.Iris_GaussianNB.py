@@ -37,7 +37,7 @@ if __name__ == "__main__":
         print('CAR测试集准确率：', accuracy_score(y_test, y_test_pred))
     else:
         feature_names = '花萼长度', '花萼宽度', '花瓣长度', '花瓣宽度'
-        data = pd.read_csv('..\\9.Regression\\iris.data', header=None, names=feature_names)
+        data = pd.read_csv('..\\第九课_代码\\9.Regression\\iris.data', header=None, names=feature_names)
         x, y = data[list(feature_names[:-1])], data[feature_names[-1]]
         y = pd.Categorical(values=data['花瓣宽度']).codes
         features = ['花萼长度', '花萼宽度']
